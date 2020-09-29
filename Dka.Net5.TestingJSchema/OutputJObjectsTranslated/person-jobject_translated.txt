@@ -1,0 +1,20 @@
+{
+  "$id": "Person",
+  "type": "object",
+  "properties": {
+    "FirstName": {
+      "title": "First name",
+      "description": "Fill your first name",
+      "type": "string"
+    },
+    "LastName": {
+      "title": "Last name",
+      "description": "Fill your last name",
+      "type": "string"
+    }
+  },
+  "required": [
+    "FirstName",
+    "LastName"
+  ]
+}

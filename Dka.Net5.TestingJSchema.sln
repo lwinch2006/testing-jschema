@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dka.Net5.TestingJSchema", "Dka.Net5.TestingJSchema\Dka.Net5.TestingJSchema.csproj", "{6B016322-CE7B-4C56-A6A4-5228A8EC2A91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B016322-CE7B-4C56-A6A4-5228A8EC2A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B016322-CE7B-4C56-A6A4-5228A8EC2A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B016322-CE7B-4C56-A6A4-5228A8EC2A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B016322-CE7B-4C56-A6A4-5228A8EC2A91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

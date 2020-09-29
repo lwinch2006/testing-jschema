@@ -1,0 +1,87 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp5.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+      <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+      <PackageReference Include="NJsonSchema.CodeGeneration.CSharp" Version="10.1.26" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="OutputJObjects" />
+      <Folder Include="OutputJObjectsTranslated" />
+      <Folder Include="OutputJSchemas" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="OutputClasses\formv2_001-class.txt" />
+      <Content Include="OutputClasses\formv2_001-class.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputClasses\formv2_002-class.txt" />
+      <Content Include="OutputClasses\formv2_002-class.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputClasses\formv2_003-class.txt" />
+      <Content Include="OutputClasses\formv2_003-class.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputClasses\person-class.txt" />
+      <Content Include="OutputClasses\person-class.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjects\formv2_001-jobject.txt" />
+      <Content Include="OutputJObjects\formv2_001-jobject.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjects\formv2_002-jobject.txt" />
+      <Content Include="OutputJObjects\formv2_002-jobject.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjects\formv2_003-jobject.txt" />
+      <Content Include="OutputJObjects\formv2_003-jobject.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjects\person-jobject.txt" />
+      <Content Include="OutputJObjects\person-jobject.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjectsTranslated\formv2_001-jobject_translated.txt" />
+      <Content Include="OutputJObjectsTranslated\formv2_001-jobject_translated.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjectsTranslated\formv2_002-jobject_translated.txt" />
+      <Content Include="OutputJObjectsTranslated\formv2_002-jobject_translated.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjectsTranslated\formv2_003-jobject_translated.txt" />
+      <Content Include="OutputJObjectsTranslated\formv2_003-jobject_translated.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJObjectsTranslated\person-jobject_translated.txt" />
+      <Content Include="OutputJObjectsTranslated\person-jobject_translated.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJSchemas\formv2_001-jschema.txt" />
+      <Content Include="OutputJSchemas\formv2_001-jschema.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJSchemas\formv2_002-jschema.txt" />
+      <Content Include="OutputJSchemas\formv2_002-jschema.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJSchemas\formv2_003-jschema.txt" />
+      <Content Include="OutputJSchemas\formv2_003-jschema.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="OutputJSchemas\person-jschema.txt" />
+      <Content Include="OutputJSchemas\person-jschema.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,386 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "data": {
+    "finalMessage": "Awesome, you\u0027ve finished the form"
+  },
+  "properties": {
+    "form-section/0": {
+      "field-type": "form-section",
+      "$id": "#/properties/form-section/0",
+      "index": "form-section/0",
+      "type": "object",
+      "title": "Personal details\u003cbr\u003e",
+      "description": "Fill your personal details\u003cbr\u003e",
+      "data": {
+        "editMode": false,
+        "textAlignment": "text-left",
+        "showTitle": true,
+        "showDescription": true,
+        "order": 0
+      },
+      "required": [
+        "form-question/2"
+      ],
+      "properties": {
+        "form-question/0": {
+          "field-type": "open-answer",
+          "type": "string",
+          "$id": "#/properties/form-section/0/properties/form-question/0",
+          "index": "form-section/0.form-question/0",
+          "title": "\u003cb\u003eFirst name\u003c/b\u003e",
+          "description": "Question",
+          "data": {
+            "editMode": false,
+            "order": 0,
+            "placeholder": "\u003cb\u003eFirst name\u003c/b\u003e",
+            "showTitle": true,
+            "showDescription": false,
+            "shortAnswer": true,
+            "maxCharacters": 120,
+            "requireValidation": false
+          }
+        },
+        "form-question/1": {
+          "field-type": "open-answer",
+          "type": "string",
+          "$id": "#/properties/form-section/0/properties/form-question/1",
+          "index": "form-section/0.form-question/1",
+          "title": "\u003cb\u003eLast name\u003c/b\u003e",
+          "description": "Question",
+          "data": {
+            "editMode": false,
+            "order": 1,
+            "placeholder": "\u003cb\u003eLast name\u003c/b\u003e",
+            "showTitle": true,
+            "showDescription": false,
+            "shortAnswer": true,
+            "maxCharacters": 120,
+            "requireValidation": false
+          }
+        },
+        "form-question/2": {
+          "field-type": "form-choice-question",
+          "type": "string",
+          "$id": "#/properties/form-section/0/properties/form-question/2",
+          "index": "form-section/0.form-question/2",
+          "title": "\u003cb\u003eDo you have middle name?\u003c/b\u003e",
+          "description": "Question description",
+          "data": {
+            "editMode": true,
+            "enableOtherOption": false,
+            "order": 2,
+            "type": "radio",
+            "showTitle": true,
+            "showDescription": false
+          },
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        },
+        "form-question/3": {
+          "field-type": "open-answer",
+          "type": "string",
+          "$id": "#/properties/form-section/0/properties/form-question/3",
+          "index": "form-section/0.form-question/3",
+          "title": "\u003cb\u003eMiddle name\u003c/b\u003e",
+          "description": "Question",
+          "data": {
+            "editMode": false,
+            "order": 3,
+            "placeholder": "\u003cb\u003eMiddle name\u003c/b\u003e",
+            "showTitle": true,
+            "showDescription": false,
+            "shortAnswer": true,
+            "maxCharacters": 120,
+            "requireValidation": false
+          }
+        },
+        "form-question/4": {
+          "field-type": "form-choice-question",
+          "type": "array",
+          "$id": "#/properties/form-section/0/properties/form-question/4",
+          "index": "form-section/0.form-question/4",
+          "title": "\u003cb\u003ePets\u003c/b\u003e",
+          "description": "Question description",
+          "data": {
+            "editMode": true,
+            "enableOtherOption": false,
+            "order": 4,
+            "type": "checkbox",
+            "showTitle": true,
+            "showDescription": false
+          },
+          "items": {
+            "type": "string",
+            "enum": [
+              "Cat",
+              "Dog"
+            ]
+          }
+        },
+        "form-question/5": {
+          "field-type": "form-rating",
+          "type": "number",
+          "$id": "#/properties/form-section/0/properties/form-question/5",
+          "index": "form-section/0.form-question/5",
+          "title": "\u003cb\u003eRank your skills\u003c/b\u003e",
+          "description": "Question description",
+          "data": {
+            "editMode": true,
+            "order": 5,
+            "minLabel": "Very Bad",
+            "maxLabel": "Very Good",
+            "showTitle": true,
+            "showDescription": false,
+            "showLabels": true
+          },
+          "variant": 0,
+          "value": 0,
+          "min": 3,
+          "max": 5
+        },
+        "form-group/6": {
+          "field-type": "form-group",
+          "$id": "#/properties/form-section/0/properties/form-group/6",
+          "index": "form-section/0.form-group/6",
+          "title": "Group 7",
+          "description": "Group description",
+          "type": "array",
+          "maxItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "form-group/6.form-group/6/form-question/1",
+              "form-group/6.form-group/6/form-question/2",
+              "form-group/6.form-group/6/form-question/3",
+              "form-group/6.form-group/6/form-question/4"
+            ],
+            "properties": {
+              "form-group/6.form-group/6/form-question/1": {
+                "field-type": "open-answer",
+                "type": "string"
+              },
+              "form-group/6.form-group/6/form-question/2": {
+                "field-type": "form-choice-question",
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Car",
+                    "Motorcycle"
+                  ]
+                }
+              },
+              "form-group/6.form-group/6/form-question/3": {
+                "field-type": "form-choice-question",
+                "type": "string",
+                "enum": [
+                  "Wine",
+                  "Beer"
+                ]
+              },
+              "form-group/6.form-group/6/form-question/4": {
+                "field-type": "form-choice-question",
+                "type": "string",
+                "enum": [
+                  "Yes",
+                  "No"
+                ]
+              }
+            }
+          },
+          "data": {
+            "showTitle": false,
+            "showDescription": false,
+            "editMode": true,
+            "order": 7,
+            "repeatable": false,
+            "buttonText": "Add another element"
+          },
+          "properties": {
+            "form-group/6.form-group/6/form-question/1": {
+              "field-type": "open-answer",
+              "type": "string",
+              "$id": "#/properties/form-section/0/properties/form-group/6.form-group/6/form-question/1",
+              "index": "form-section/0.form-group/6.form-group/6/form-question/1",
+              "title": "\u003cb\u003eYour favourite city\u003c/b\u003e",
+              "description": "Question",
+              "data": {
+                "editMode": false,
+                "order": 0,
+                "placeholder": "\u003cb\u003eYour favourite city\u003c/b\u003e",
+                "showTitle": true,
+                "showDescription": false,
+                "shortAnswer": true,
+                "maxCharacters": 120,
+                "requireValidation": false
+              }
+            },
+            "form-group/6.form-group/6/form-question/2": {
+              "field-type": "form-choice-question",
+              "type": "array",
+              "$id": "#/properties/form-section/0/properties/form-group/6.form-group/6/form-question/2",
+              "index": "form-section/0.form-group/6.form-group/6/form-question/2",
+              "title": "\u003cb\u003eDo you have car or motorcycle?\u003c/b\u003e",
+              "description": "Question description",
+              "data": {
+                "editMode": true,
+                "enableOtherOption": false,
+                "order": 1,
+                "type": "checkbox",
+                "showTitle": true,
+                "showDescription": false
+              },
+              "items": {
+                "type": "string",
+                "enum": [
+                  "Car",
+                  "Motorcycle"
+                ]
+              }
+            },
+            "form-group/6.form-group/6/form-question/3": {
+              "field-type": "form-choice-question",
+              "type": "string",
+              "$id": "#/properties/form-section/0/properties/form-group/6.form-group/6/form-question/3",
+              "index": "form-section/0.form-group/6.form-group/6/form-question/3",
+              "title": "\u003cb\u003eWhat do you like to drink?\u003c/b\u003e",
+              "description": "Question description",
+              "data": {
+                "editMode": true,
+                "enableOtherOption": false,
+                "order": 2,
+                "type": "select",
+                "showTitle": true,
+                "showDescription": false
+              },
+              "enum": [
+                "Wine",
+                "Beer"
+              ]
+            },
+            "form-group/6.form-group/6/form-question/4": {
+              "field-type": "form-choice-question",
+              "type": "string",
+              "$id": "#/properties/form-section/0/properties/form-group/6.form-group/6/form-question/4",
+              "index": "form-section/0.form-group/6.form-group/6/form-question/4",
+              "title": "\u003cb\u003eDo you have passport?\u003c/b\u003e",
+              "description": "Question description",
+              "data": {
+                "editMode": true,
+                "enableOtherOption": false,
+                "order": 3,
+                "type": "radio",
+                "showTitle": true,
+                "showDescription": false
+              },
+              "enum": [
+                "Yes",
+                "No"
+              ]
+            }
+          }
+        },
+        "form-question/7": {
+          "field-type": "form-choice-question",
+          "type": "string",
+          "$id": "#/properties/form-section/0/properties/form-question/7",
+          "index": "form-section/0.form-question/7",
+          "title": "\u003cb\u003eShow extra information\u003c/b\u003e",
+          "description": "Question description",
+          "data": {
+            "editMode": true,
+            "enableOtherOption": false,
+            "order": 6,
+            "type": "radio",
+            "showTitle": true,
+            "showDescription": false
+          },
+          "enum": [
+            "Yes",
+            "No"
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "form-section/0"
+  ],
+  "allOf": [
+    {
+      "$id": "6b2bf0b4-24e4-4d7d-8e6c-085f06646c29",
+      "if": {
+        "properties": {
+          "form-section/0": {
+            "properties": {
+              "form-question/2": {
+                "const": "Yes"
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "form-section/0": {
+            "properties": {
+              "form-question/3": {}
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "form-section/0": {
+            "properties": {},
+            "required": [
+              "form-question/3"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "$id": "c42b9562-63df-412f-8ad2-5c6c7d64561b",
+      "if": {
+        "properties": {
+          "form-section/0": {
+            "properties": {
+              "form-question/7": {
+                "const": "Yes"
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "form-section/0": {
+            "properties": {
+              "form-group/6": {
+                "minItems": 0
+              }
+            }
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "form-section/0": {
+            "properties": {
+              "form-group/6": {
+                "minItems": 1
+              }
+            },
+            "required": [
+              "form-group/6"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

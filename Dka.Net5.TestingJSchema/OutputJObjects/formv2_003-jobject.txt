@@ -1,0 +1,30 @@
+{
+  "$id": "FormV2_003",
+  "type": "object",
+  "properties": {
+    "form-section/0": {
+      "$id": "FormSection_0",
+      "title": "Personal details",
+      "type": "object",
+      "properties": {
+        "form-question/0": {
+          "type": "string"
+        },
+        "form-question/1": {
+          "type": "string",
+          "enum": [
+            "Cat",
+            "Dog"
+          ]
+        }
+      },
+      "required": [
+        "form-question/0",
+        "form-question/1"
+      ]
+    }
+  },
+  "required": [
+    "form-section/0"
+  ]
+}

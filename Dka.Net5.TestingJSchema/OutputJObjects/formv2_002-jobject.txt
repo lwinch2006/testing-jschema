@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "form/24",
+  "data": {
+    "finalMessage": "Awesome, you've finished the form"
+  },
+  "type": "object",
+  "properties": {
+    "form-section/0": {
+      "$id": "#/properties/form-section/0",
+      "title": "Personal details<br>",
+      "description": "Fill your personal details<br>",
+      "field-type": "form-section",
+      "index": "form-section/0",
+      "data": {
+        "editMode": false,
+        "textAlignment": "text-left",
+        "showTitle": true,
+        "showDescription": true,
+        "order": 0
+      },
+      "type": "object",
+      "properties": {
+        "form-question/0": {
+          "$id": "#/properties/form-section/0/properties/form-question/0",
+          "title": "Full name",
+          "description": "Question",
+          "field-type": "open-answer",
+          "index": "form-section/0.form-question/0",
+          "data": {
+            "editMode": false,
+            "order": 0,
+            "placeholder": "Full name",
+            "showTitle": true,
+            "showDescription": false,
+            "shortAnswer": true,
+            "maxCharacters": 120,
+            "requireValidation": false
+          },
+          "type": "string"
+        },
+        "form-question/1": {
+          "$id": "#/properties/form-section/0/properties/form-question/1",
+          "title": "<b>Do you have pets?</b>",
+          "description": "Question description",
+          "field-type": "form-choice-question",
+          "index": "form-section/0.form-question/1",
+          "data": {
+            "editMode": true,
+            "enableOtherOption": false,
+            "order": 1,
+            "type": "radio",
+            "showTitle": true,
+            "showDescription": false
+          },
+          "type": "string",
+          "enum": [
+            "Cat",
+            "Dog"
+          ]
+        }
+      },
+      "required": [
+        "form-question/0",
+        "form-question/1"
+      ]
+    }
+  },
+  "required": [
+    "form-section/0"
+  ]
+}
